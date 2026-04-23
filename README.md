@@ -1,21 +1,40 @@
-# ETL Data Warehouse for Online Retail Sales Analytics
+# ETL Retail Data Warehouse
 
-## Project Overview
-This project implements an ETL (Extract, Transform, Load) pipeline to build a data warehouse for online retail sales analysis. The goal is to convert raw sales data into a structured format suitable for analytical reporting.
+This project demonstrates an end-to-end ETL pipeline and data warehouse using Python, MySQL, and Power BI.
 
-## Technologies Used
-- Python (pandas)
+## 📌 Overview
+- Extracted retail transaction data from CSV
+- Cleaned and transformed data using Pandas
+- Designed a star schema data warehouse
+- Loaded data into MySQL
+- Built Power BI dashboard for analytics
+
+## 🏗 Architecture
+CSV → Python (Pandas) → MySQL (Star Schema) → Power BI
+
+## 🧰 Tech Stack
+- Python (Pandas)
 - MySQL
-- SQL
-- GitHub
+- Power BI
+- mysql-connector-python
 
-## Data Warehouse Design
-The warehouse follows a Star Schema design with a central Sales Fact table and supporting dimension tables such as Product, Customer, Time, and Location.
+## ⚙️ Key Features
+- Data cleaning (duplicates, missing values)
+- ETL pipeline implementation
+- Star schema design (fact + dimension tables)
+- SQL validation queries
+- Interactive dashboards
 
-## ETL Workflow
-- Extract: Collect raw retail sales data from CSV or API sources.
-- Transform: Clean data, handle missing values, and apply dimensional modeling.
-- Load: Store processed data into a MySQL data warehouse.
+## 📊 Results
+- Built structured data warehouse
+- Enabled fast analytics queries
+- Visualized KPIs (Revenue, Customers, Orders)
 
-## Project Status
-In progress – initial project setup and design phase.
+## 📷 Screenshots
+(Add Power BI dashboard images here)
+
+## 🚀 How to Run
+1. Place dataset in `data/raw/`
+2. Run `extract.py`
+3. Run `load.py`
+4. Open Power BI dashboard
